@@ -58,6 +58,56 @@
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
                             </tableViewCell>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="CalanqueCell" rowHeight="153" id="pyd-wb-L98" customClass="CalanqueCell" customModule="Les_Calanques" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="72" width="375" height="153"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="pyd-wb-L98" id="sme-ec-HAT">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="152.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="D25-5O-zrI">
+                                            <rect key="frame" x="0.0" y="52.5" width="375" height="100"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="BkE-3t-H4h">
+                                                    <rect key="frame" x="150" y="8" width="217" height="84"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <constraints>
+                                                <constraint firstAttribute="trailing" secondItem="BkE-3t-H4h" secondAttribute="trailing" constant="8" id="9y8-zg-dNG"/>
+                                                <constraint firstAttribute="height" constant="100" id="Hmn-UF-3RH"/>
+                                                <constraint firstAttribute="bottom" secondItem="BkE-3t-H4h" secondAttribute="bottom" constant="8" id="WeV-xS-qCj"/>
+                                                <constraint firstItem="BkE-3t-H4h" firstAttribute="top" secondItem="D25-5O-zrI" secondAttribute="top" constant="8" id="n8F-8h-Tm7"/>
+                                                <constraint firstItem="BkE-3t-H4h" firstAttribute="leading" secondItem="D25-5O-zrI" secondAttribute="leading" constant="150" id="t43-Oz-gBL"/>
+                                            </constraints>
+                                        </view>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="gdR-0Q-G8Z" customClass="imageRonde" customModule="Les_Calanques" customModuleProvider="target">
+                                            <rect key="frame" x="24" y="14" width="125" height="125"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="125" id="2Rp-1Z-gnQ"/>
+                                                <constraint firstAttribute="width" constant="125" id="qba-GV-e1p"/>
+                                            </constraints>
+                                        </imageView>
+                                    </subviews>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <constraints>
+                                        <constraint firstAttribute="trailing" secondItem="D25-5O-zrI" secondAttribute="trailing" id="1m4-hh-aSn"/>
+                                        <constraint firstAttribute="bottom" secondItem="D25-5O-zrI" secondAttribute="bottom" id="FuB-kM-fXa"/>
+                                        <constraint firstItem="D25-5O-zrI" firstAttribute="leading" secondItem="sme-ec-HAT" secondAttribute="leading" id="dqI-bh-350"/>
+                                        <constraint firstItem="gdR-0Q-G8Z" firstAttribute="leading" secondItem="sme-ec-HAT" secondAttribute="leadingMargin" constant="8" id="oNd-pb-BI6"/>
+                                        <constraint firstItem="gdR-0Q-G8Z" firstAttribute="centerY" secondItem="sme-ec-HAT" secondAttribute="centerY" id="pGX-Yh-7jY"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <connections>
+                                    <outlet property="calanqueIV" destination="gdR-0Q-G8Z" id="uli-9O-UAr"/>
+                                    <outlet property="containerView" destination="D25-5O-zrI" id="0q1-qn-pz9"/>
+                                    <outlet property="nomLabel" destination="BkE-3t-H4h" id="0Zj-gn-4Oy"/>
+                                </connections>
+                            </tableViewCell>
                         </prototypes>
                         <connections>
                             <outlet property="dataSource" destination="zPu-cO-DUS" id="Ufj-Vc-m0a"/>
@@ -68,7 +118,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9BS-qc-mlr" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="750" y="0.0"/>
+            <point key="canvasLocation" x="749.60000000000002" y="-0.44977511244377816"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="yl2-sM-qoP">
