@@ -19,6 +19,7 @@
 		284E024421849CC8001F6987 /* CalanqueCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 284E024321849CC8001F6987 /* CalanqueCell.swift */; };
 		286D38B92184F54000A94BBF /* imageRonde.swift in Sources */ = {isa = PBXBuildFile; fileRef = 286D38B82184F54000A94BBF /* imageRonde.swift */; };
 		288B9C42218F6C44001E1B72 /* DetailController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 288B9C41218F6C44001E1B72 /* DetailController.swift */; };
+		28AA33082193819B0051CCA1 /* Bouton Arrondi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28AA33072193819B0051CCA1 /* Bouton Arrondi.swift */; };
 		28BF96512186101300F13888 /* calanqueCellAlternative.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28BF96502186101300F13888 /* calanqueCellAlternative.swift */; };
 /* End PBXBuildFile section */
 
@@ -37,6 +38,7 @@
 		284E024321849CC8001F6987 /* CalanqueCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalanqueCell.swift; sourceTree = "<group>"; };
 		286D38B82184F54000A94BBF /* imageRonde.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = imageRonde.swift; sourceTree = "<group>"; };
 		288B9C41218F6C44001E1B72 /* DetailController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailController.swift; sourceTree = "<group>"; };
+		28AA33072193819B0051CCA1 /* Bouton Arrondi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bouton Arrondi.swift"; sourceTree = "<group>"; };
 		28BF96502186101300F13888 /* calanqueCellAlternative.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = calanqueCellAlternative.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -97,6 +99,7 @@
 				284E024321849CC8001F6987 /* CalanqueCell.swift */,
 				286D38B82184F54000A94BBF /* imageRonde.swift */,
 				28BF96502186101300F13888 /* calanqueCellAlternative.swift */,
+				28AA33072193819B0051CCA1 /* Bouton Arrondi.swift */,
 			);
 			path = Vue;
 			sourceTree = "<group>";
@@ -188,6 +191,7 @@
 				2838A1CB2183A73D00382DEF /* AppDelegate.swift in Sources */,
 				284E024421849CC8001F6987 /* CalanqueCell.swift in Sources */,
 				2838A1E42183B45200382DEF /* CalanqueCollection.swift in Sources */,
+				28AA33082193819B0051CCA1 /* Bouton Arrondi.swift in Sources */,
 				284E024021846729001F6987 /* ControllerAvecCarte.swift in Sources */,
 				284E023E218466E9001F6987 /* ControllerAvecTableView.swift in Sources */,
 				286D38B92184F54000A94BBF /* imageRonde.swift in Sources */,

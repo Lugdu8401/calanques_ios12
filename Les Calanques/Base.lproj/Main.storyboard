@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="49e-Tb-3d3">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="kA0-qV-VIw">
     <device id="retina5_5" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -42,13 +42,13 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="callelongue" translatesAutoresizingMaskIntoConstraints="NO" id="Pvx-J8-4FD">
-                                                    <rect key="frame" x="0.0" y="2" width="349" height="195"/>
+                                                    <rect key="frame" x="0.0" y="2" width="742" height="195"/>
                                                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </imageView>
                                                 <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jRJ-20-nQ9">
-                                                    <rect key="frame" x="0.0" y="137" width="349" height="60"/>
+                                                    <rect key="frame" x="0.0" y="137" width="742" height="60"/>
                                                     <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="UBi-8N-4Ux">
-                                                        <rect key="frame" x="0.0" y="0.0" width="349" height="60"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="742" height="60"/>
                                                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                                     </view>
                                                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -58,7 +58,7 @@
                                                     <blurEffect style="light"/>
                                                 </visualEffectView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="9mH-P4-VFD">
-                                                    <rect key="frame" x="0.0" y="137" width="349" height="60"/>
+                                                    <rect key="frame" x="0.0" y="137" width="742" height="60"/>
                                                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="60" id="TDz-qY-fQY"/>
@@ -206,7 +206,13 @@
                             <outlet property="delegate" destination="zPu-cO-DUS" id="lyh-54-lsi"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" id="dzj-Kx-HOU"/>
+                    <navigationItem key="navigationItem" id="dzj-Kx-HOU">
+                        <barButtonItem key="rightBarButtonItem" title="Reload" id="aXd-IY-Ewp">
+                            <connections>
+                                <action selector="reloadAction:" destination="zPu-cO-DUS" id="yfg-IA-jZW"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <segue destination="khB-cZ-5EH" kind="show" identifier="Detail" id="aaz-QB-85h"/>
                     </connections>
@@ -257,6 +263,67 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5Mc-oQ-Nmv" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2383.1999999999998" y="-0.44977511244377816"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="UyL-EF-w1e">
+            <objects>
+                <viewController id="kA0-qV-VIw" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="T2u-ae-2vV">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sugiton" translatesAutoresizingMaskIntoConstraints="NO" id="leo-Af-myH">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sugiton" translatesAutoresizingMaskIntoConstraints="NO" id="FE7-FT-P1f" customClass="imageRonde" customModule="Les_Calanques" customModuleProvider="target">
+                                <rect key="frame" x="119.66666666666669" y="50" width="175" height="175"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="175" id="1BS-VY-tsH"/>
+                                    <constraint firstAttribute="width" constant="175" id="XvT-ji-cQK"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Un coin de paradis en plein coeur de la métropole marseillaise !" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RfO-Gy-6jG">
+                                <rect key="frame" x="20" y="245" width="374" height="401"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="21"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qRU-A6-ojz" customClass="Bouton_Arrondi" customModule="Les_Calanques" customModuleProvider="target">
+                                <rect key="frame" x="20" y="666" width="374" height="50"/>
+                                <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="kVg-9D-cDH"/>
+                                </constraints>
+                                <state key="normal" title="Visitez les calanques !">
+                                    <color key="titleColor" red="0.93725490570000003" green="0.93725490570000003" blue="0.95686274770000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="49e-Tb-3d3" kind="show" id="g2V-V8-Mu3"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="FE7-FT-P1f" firstAttribute="centerX" secondItem="T2u-ae-2vV" secondAttribute="centerX" id="0j4-dn-OJF"/>
+                            <constraint firstItem="leo-Af-myH" firstAttribute="bottom" secondItem="T2u-ae-2vV" secondAttribute="bottom" id="3vN-Oh-4dv"/>
+                            <constraint firstItem="aAl-J9-n1c" firstAttribute="trailing" secondItem="RfO-Gy-6jG" secondAttribute="trailing" constant="20" id="Lz8-6e-MEC"/>
+                            <constraint firstItem="RfO-Gy-6jG" firstAttribute="top" secondItem="FE7-FT-P1f" secondAttribute="bottom" constant="20" id="PcC-jG-gNU"/>
+                            <constraint firstItem="RfO-Gy-6jG" firstAttribute="leading" secondItem="aAl-J9-n1c" secondAttribute="leading" constant="20" id="ReU-E0-cYH"/>
+                            <constraint firstItem="leo-Af-myH" firstAttribute="trailing" secondItem="T2u-ae-2vV" secondAttribute="trailing" id="Tfp-JP-CQx"/>
+                            <constraint firstItem="leo-Af-myH" firstAttribute="top" secondItem="T2u-ae-2vV" secondAttribute="top" id="Tko-Ga-VGO"/>
+                            <constraint firstItem="leo-Af-myH" firstAttribute="leading" secondItem="T2u-ae-2vV" secondAttribute="leading" id="Urz-HR-yeR"/>
+                            <constraint firstItem="aAl-J9-n1c" firstAttribute="bottom" secondItem="qRU-A6-ojz" secondAttribute="bottom" constant="20" id="cAf-aC-uUy"/>
+                            <constraint firstItem="FE7-FT-P1f" firstAttribute="top" secondItem="aAl-J9-n1c" secondAttribute="top" constant="30" id="n1n-uF-eJ3"/>
+                            <constraint firstItem="aAl-J9-n1c" firstAttribute="trailing" secondItem="qRU-A6-ojz" secondAttribute="trailing" constant="20" id="sWJ-bg-5q3"/>
+                            <constraint firstItem="qRU-A6-ojz" firstAttribute="top" secondItem="RfO-Gy-6jG" secondAttribute="bottom" constant="20" id="scU-SZ-8EK"/>
+                            <constraint firstItem="qRU-A6-ojz" firstAttribute="leading" secondItem="aAl-J9-n1c" secondAttribute="leading" constant="20" id="zBg-dc-i5G"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="aAl-J9-n1c"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wro-qt-6p6" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-697.10144927536237" y="-1.6304347826086958"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="yl2-sM-qoP">
@@ -340,6 +407,7 @@
         <image name="earth" width="25.600000381469727" height="25.600000381469727"/>
         <image name="list" width="25.600000381469727" height="25.600000381469727"/>
         <image name="port pin" width="245.75999450683594" height="164.16000366210938"/>
+        <image name="sugiton" width="1600" height="896"/>
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="aaz-QB-85h"/>
